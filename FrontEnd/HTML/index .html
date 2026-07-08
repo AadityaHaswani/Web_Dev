@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning</title>
+</head>
+<body>
+
+    <!-- Headings -->
+
+    <h1>HTML Learning</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph -->
+
+    <p>
+        HTML stands for HyperText Markup Language. It is used to create the
+        structure of web pages.
+    </p>
+
+    <hr>
+
+    <!-- Block vs Inline Elements -->
+
+    <h2>Block vs Inline</h2>
+
+    <div>This is a block element.</div>
+    <div>This is another block element.</div>
+
+    <p>
+        This is an inline example using
+        <span>span</span>,
+        <strong>strong</strong> and
+        <em>em</em>.
+    </p>
+
+    <hr>
+
+    <!-- Emmet Example -->
+
+    <h2>Emmet</h2>
+
+    <p>Practice these Emmet shortcuts in VS Code:</p>
+
+    <pre>
+nav>ul>li*5
+div.container
+section>h2+p
+ul>li*3>a
+    </pre>
+
+    <hr>
+
+    <!-- Lists -->
+
+    <h2>Lists</h2>
+
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+    </ol>
+
+    <hr>
+
+    <!-- Links -->
+
+    <h2>Links</h2>
+
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <hr>
+
+    <!-- Images -->
+
+    <h2>Image</h2>
+
+    <img
+        src="https://via.placeholder.com/250"
+        alt="Sample Image"
+        width="250"
+    >
+
+    <hr>
+
+    <!-- Tables -->
+
+    <h2>Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Aditya</td>
+            <td>Computer Engineering</td>
+            <td>Second</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>IT</td>
+            <td>Second</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Forms -->
+
+    <h2>Student Form</h2>
+
+    <form>
+
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <br><br>
+
+        <label>Branch</label>
+        <br>
+
+        <select>
+            <option>Computer</option>
+            <option>IT</option>
+            <option>EXTC</option>
+        </select>
+
+        <br><br>
+
+        <label>Gender</label>
+        <br>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <input type="checkbox"> I agree to the terms
+
+        <br><br>
+
+        <textarea rows="4" cols="30" placeholder="Write something"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <hr>
+
+    <!-- Semantic HTML -->
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h3>About HTML</h3>
+
+            <article>
+                <p>
+                    Semantic tags make HTML more meaningful and easier to read.
+                </p>
+            </article>
+
+        </section>
+
+        <aside>
+            <p>This is an aside section.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    <hr>
+
+    <!-- Multimedia -->
+
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <h2>Video</h2>
+
+    <video width="320" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <h2>Iframe</h2>
+
+    <iframe
+        src="https://example.com"
+        width="400"
+        height="200"
+        title="Example Website">
+    </iframe>
+
+    <hr>
+
+    <!-- ARIA -->
+
+    <h2>ARIA Example</h2>
+
+    <button aria-label="Open Menu">
+        Menu
+    </button>
+
+    <input
+        type="search"
+        placeholder="Search"
+        aria-label="Search Box"
+    >
+
+</body>
+</html>
