@@ -1,0 +1,158 @@
+/* CSS Basics */
+
+/* Universal Selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selectors */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1{
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+/* Class Selector */
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* ID Selector */
+
+#title{
+    text-align: center;
+}
+
+/* Attribute Selector */
+
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* Pseudo Class */
+
+button:hover{
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+/* Pseudo Element */
+
+.card p::first-letter{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Box Model */
+
+.box{
+    width: 200px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+/* Block and Inline */
+
+.block{
+    display: block;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+
+.inline{
+    display: inline;
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+/* Position */
+
+.parent{
+    position: relative;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.child{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: orange;
+    padding: 10px;
+}
+
+/* Flexbox */
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.flex-item{
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.grid-item{
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    body{
+        padding: 10px;
+    }
+}
